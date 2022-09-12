@@ -3,9 +3,8 @@
 /**
  * main - Function starts
  *
- * Return: Function closes
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
