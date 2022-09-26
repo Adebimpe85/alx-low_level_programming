@@ -1,4 +1,4 @@
-4-strpbrk.c
+#include "main.h"
 
 /**
  * _strpbrk - matches any character specified
@@ -21,8 +21,10 @@ char *_strpbrk(char *s, char *accept)
 				return (s);
 			}
 
-			s++; /*add s+1*/
+			j++; /*add j+1*/
 		}
-		return (0);
 
+		s++; /*add s+1*/
 	}
+	return (0);
+}
