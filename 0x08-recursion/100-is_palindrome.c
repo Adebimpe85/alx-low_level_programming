@@ -4,7 +4,7 @@
  * _strlen_recursion - size
  * @s: pointer to string params
  * Return: recursion
- * */
+ */
 
 int _strlen_recursion(char *s)
 {
@@ -28,7 +28,6 @@ int p1(char *s, int l)
 	{
 		return (1);
 	}
-
 	if (*s == *(s + l))
 	{
 		return (p1(s + 1, l - 2));
