@@ -1,6 +1,5 @@
-#include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints the multiplication of two integers
@@ -8,16 +7,16 @@
  * @argv: argument vector
  * Return: 0 if true, 1 if false
  */
-int main(int argc, char *argv[])
+
+int main(int argc, char const *argv[])
 {
-	int a, b;
-	if (argc == 3)
+	(void)argc;
+
+	if (argc != 3)
 	{
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
-		printf("%d\n", a *b);
-		return (0);
+		printf("Error\n");
+		return (1);
 	}
-	printf("Error\n");
-	return (1);
+	printf("%i\n", atoi(argv[1]) * atoi(argv[2]));
+	return (0);
 }
