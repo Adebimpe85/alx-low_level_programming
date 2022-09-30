@@ -1,1 +1,1 @@
-Readme file
+my static project
