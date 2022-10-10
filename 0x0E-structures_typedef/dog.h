@@ -3,7 +3,7 @@
 
 /**
  * struct dog - structure dog
- * @name: atribute pointer to char name's do
+ * @name: atribute pointer to char name's dog
  * @age: atribute float age's dog
  * @owner: atribute pointer to char owner's dog
  */
@@ -21,7 +21,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
 
 void print_dog(struct dog *d);
 
-og_t *new_dog(char *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner);
 
 void free_dog(dog_t *d);
 
