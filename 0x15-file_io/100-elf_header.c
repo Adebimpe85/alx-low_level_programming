@@ -178,33 +178,33 @@ void print_abi(unsigned char *e_ident)
  * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_type(unsigned int e_type, unsigned char *e_iden
-		{
-		if (e_ident[EI_DATA] == ELFDATA2MSB)
+{
+	if (e_ident[EI_DATA] == ELFDATA2MSB)
 		e_type >>= 8;
 
-		printf("  Type:                              ");
+	printf("  Type:                              ");
 
-		switch (e_type)
-		{
-		case ET_NONE:
+	switch (e_type)
+	{
+	case ET_NONE:
 		printf("NONE (None)\n");
 		break;
-		case ET_REL:
+	case ET_REL:
 		printf("REL (Relocatable file)\n");
 		break;
-		case ET_EXEC:
+	case ET_EXEC:
 		printf("EXEC (Executable file)\n");
 		break;
-		case ET_DYN:
+	case ET_DYN:
 		printf("DYN (Shared object file)\n");
 		break;
-		case ET_CORE:
+	case ET_CORE:
 		printf("CORE (Core file)\n");
 		break;
-		default:
-         		printf("<unknown: %x>\n", e_type);
-		}
-		}
+	default:
+       		printf("<unknown: %x>\n", e_type);
+	}
+}
 
 /**
  * print_entry - Prints the entry point of an ELF header.
